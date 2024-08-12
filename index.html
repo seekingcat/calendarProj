@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Title in the tab</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>National Holidays</h1>
+    <p>
+      Enter the country's
+      <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+        >iso-3166</a
+      >
+      code and the year to get a list of holidays
+    </p>
+    <p>
+      <input
+        type="text"
+        name=""
+        value=""
+        placeholder="enter country ISO code"
+        id="country"
+      />
+      <input type="text" id="year" placeholder="YYYY" />
+      <select name="" id="holidayType">
+        <option value="national">National</option>
+        <option value="local">Local</option>
+        <option value="religious">Religious</option>
+        <option value="observance">Observance</option>
+      </select>
+      <button type="button" name="button">Get holidays</button>
+    </p>
+
+    <ul id="holidayList"></ul>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
